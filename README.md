@@ -1,7 +1,7 @@
 # GDSC-SCOE
 
 # Collaborators
-**Kshiti Gambhir**  **Rudraksh Kushwaha**  **Samarth Shendre**  **Rushikesh Gavhane**<br>
+**Kshiti Gambhir** &nbsp **Rudraksh Kushwaha** &nbsp **Samarth Shendre** &nbsp **Rushikesh Gavhane**<br>
 
 
 # GDSC SCOE
