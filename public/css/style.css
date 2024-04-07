@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-height: 100vh;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #logo{
+      margin: 10px 34px;
+  }
+  
+  #logo img{
+      height: 59px;
+      margin: 3px 6px;
+  }
+  
+
+  nav {
+    display: flex;
+    justify-content: flex-start; /* Logo on the left, menu on the right */
+    align-items: center; /* Align items vertically */
+    padding: 0px; /* Adjust padding as needed */
+    background-color: #333; /* Example background color */
+    color: #fff; /* Example text color */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust height of the logo */
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .search-menu {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  #slideshow-container {
+    position: relative;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .slideshow {
+    
+        display: none;
+        width: 100%; /* Set a fixed width for the slideshow container */
+        height: 300px; /* Set a fixed height for the slideshow container */
+        object-fit: cover; /* Maintain aspect ratio while covering the container */
+      }
+  
+
+  .slideshow img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-donate {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    bottom: 35px;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: rgb(17, 16, 16);
+    
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: rgb(236, 75, 75);
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:rgb(255, 255, 255);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+    color: rgb(236, 75, 75);
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+/* ////////////DONATION CARD CSS/////////// */
+hr.line {
+  border-top: 1px dashed rgb(222, 215, 132);
+}
+
+.donation-cards{
+  height: 500px;
+
+}
+.box{
+height: 300px;
+width: 300px;
+border: 2px solid black;
+}
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.money-donate{
+  /* transform: translate(50%, 50%); */
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  /* margin-left: 20px; */
+
+}
+#money{
+  
+}
