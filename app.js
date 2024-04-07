@@ -11,6 +11,10 @@ app.use('/',paymentRoute);
 app.set("view engine","ejs")
 app.use(express.static("public"));
 
+app.get('/news',(req,res)=>{
+    res.render("news");
+})
+
 http.listen(3000, function(){
     console.log('Server is running');
 });
