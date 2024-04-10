@@ -14,7 +14,9 @@ app.use(express.static("public"));
 app.get('/news',(req,res)=>{
     res.render("news");
 })
-
+app.get('/about',(req,res)=>{
+    res.render("about");
+})
 http.listen(3000, function(){
     console.log('Server is running');
 });
