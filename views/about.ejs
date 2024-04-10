@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>About</title>
+  <style>
+    *{
+      margin: 0px;
+      padding:0px;
+      box-sizing:border-box;
+      font-family:"Roboto" ,sans-serif;
+    }
+    .about-us{
+      padding:80px 0px;
+    }
+    .container{
+      max-width:1200px;
+      margin:0 auto;
+      padding:0 20px;
+      
+    }
+    .row{
+      display:flex;
+      flex-wrap:wrap;
+    }
+    .flex{
+      flex:0 0 50%;
+      max-width:50%;
+      padding:0 20px;
+    }
+    .about-us h1{
+      font-size:45px;
+      margin-bottom:20px;
+      color:#333;
+    }
+    .about-us h2{
+      font-size:22px;
+      margin-bottom:8px;
+      color:#111;
+    }
+    .about-us p{
+      font-size:18px;
+      margin-bottom:1.5px;
+      color:#555;
+      margin-bottom: 2111;
+    }
+    .about-us img{
+     height: auto;
+     display: block;
+     max-width: 100%;
+      margin: 0 auto;
+    }
+    .socialIcons{
+   
+    margin-bottom: 20px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display:inline-block;
+   
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: rgb(236, 75, 75);
+    transition: 0.5s;
+}
+@media screen and (max-width:768px) {
+  .row{
+    flex-direction: column;
+  }
+  .flex{
+    max-width:100%;
+  }
+}
+.container{
+    max-width: 95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.img{
+  border-radius: 50%;
+}
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: center;
+}
+.header{
+  text-align: center;
+}
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 8px;
+}
+
+.card_desc{
+    color: rgb(113, 107, 107);
+    font-size: 1rem;
+    text-align: center;
+    
+}
+.card_container:hover .card_avatar{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.author_name{
+    color: rgb(38, 38, 149);
+}
+
+.author_date{
+    color: rgb(23, 20, 20);
+}
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="about-us">
+    <div class="container">
+      <div class="row">
+        <div class="flex">
+          <h1>About Us</h1><br>
+          <h2>"Empowering  Generosity, Transforming Lives"</h2><br>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga voluptate quia voluptatibus tempora quo eos
+             nobis natus et saepe quam aliquam blanditiis,<br> vel quisquam aspernatur qui non fugit provident fugiat omnis 
+             cumque pariatur accusamus inventore! Repudiandae optio ad vel officiis,
+             laborum aspernatur numquam quo, et error, dolorem incidunt esse at.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam quasi omnis alias! <br>Perferendis placeat veritatis natus non aliquid? Odio 
+            inventore optio adipisci neque odit iusto quidem ullam ipsa deserunt!</p>
+             <div class="socialIcons">
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fa-brands fa-twitter"></i></a>
+             <a href=""><i class="fa-brands fa-google"></i></a>
+             <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="flex">
+        <img src="img/team1.jpg" alt="team">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <h1 class="header">Team Members</h1><br>
+  <main class="main_container">
+   
+    <!-- card 1 start -->
+    <div class="card_container">
+      <div class="card_avatar">
+       <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"
+                alt="avatar"
+                class="card_image"
+                loading="lazy"
+            />
+        <br>
+      </div>
+
+        <div class="card_title_container"><br>
+            <p class="card_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dolores.
+            </p><br>
+        </div>
+     
+
+           <div class="author_info_container">
+              <span class="author_name">
+                 John Doe
+               </span>
+              <span class="author_date">
+                Pune, Maharashtra
+              </span>              
+             </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- card 2 starts -->
+    <div class="card_container">
+      <div class="card_avatar">
+      <img src="https://api.dicebear.com/7.x/notionists/svg?seed=luna?size=64"
+               alt="avatar"
+               class="card_image"
+               loading="lazy"
+           />
+       <br>
+        </div>
+       <div class="card_title_container"><br>
+           <p class="card_desc">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+               Sed commodi quasi possimus 
+
+           </p><br>
+       </div>
+    
+
+          <div class="author_info_container">
+             <span class="author_name">
+                Chloe karl
+              </span>
+             <span class="author_date">
+               Pune, Maharashtra
+             </span>              
+            </div>
+          </div>
+       </div>
+   </div>
+   <!-- card 3 starts -->
+   <div class="card_container">
+    <div class="card_avatar">
+    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=simon?size=64"
+             alt="avatar"
+             class="card_image"
+             loading="lazy"
+         />
+     <br>
+      </div>
+     <div class="card_title_container"><br>
+         <p class="card_desc">
+             Lorem ipsum dolor sit amet consectetur 
+             adipisicing elit. Officia, aliquam.
+         </p><br>
+     </div>
+  
+        <div class="author_info_container">
+           <span class="author_name">
+              John Doe
+            </span>
+           <span class="author_date">
+             Pune, Maharashtra
+           </span>              
+          </div>
+        </div>
+     </div>
+ </div>
+ <!-- card 4 starts -->
+ <div class="card_container">
+  <div class="card_avatar">
+  <img src="https://api.dicebear.com/7.x/notionists/svg?seed=rocky?size=64"
+           alt="avatar"
+           class="card_image"
+           loading="lazy"
+       />
+   <br>
+    </div>
+   <div class="card_title_container"><br>
+       <p class="card_desc">
+           Lorem ipsum dolor sit amet consectetur 
+           adipisicing elit. Officia, aliquam.
+       </p><br>
+   </div>
+
+      <div class="author_info_container">
+         <span class="author_name">
+            Troye Sivan
+          </span>
+         <span class="author_date">
+           Pune, Maharashtra
+         </span>              
+        </div>
+      </div>
+   </div>
+</div>
+</body>
+</html>
