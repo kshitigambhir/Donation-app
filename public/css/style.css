@@ -5,11 +5,13 @@ body {
   }
 
   header {
-    background-color: #333;
+    background-color: #ffffff;
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    width:auto
+  
   }
+
   #logo{
       margin: 10px 34px;
   }
@@ -22,38 +24,43 @@ body {
 
   nav {
     display: flex;
-    justify-content: flex-start; /* Logo on the left, menu on the right */
+    justify-content:space-between; /* Logo on the left, menu on the right */
     align-items: center; /* Align items vertically */
-    padding: 0px; /* Adjust padding as needed */
-    background-color: #333; /* Example background color */
-    color: #fff; /* Example text color */
+    box-shadow: 0px 1px 5px 0px rgb(210, 207, 207);  
+    /* Adjust padding as needed */
+    background-color:antiquewhite; /* Example background color */
+    color: #000000; /* Example text color */
   }
   
   .logo img {
     height: 40px; /* Adjust height of the logo */
   }
 
-  nav ul {
+  nav ul{
     list-style-type: none;
-    padding: 5px;
-    margin: 5px;
+    padding-right:60px;
+    margin-right: 5px;
+    text-align: center;
+    
   }
 
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
+  nav ul li{
+    display:inline-block;
+    margin-right: 10px 20px;
+    padding:0 20px 0 20px;
   }
 
-  nav ul li a {
-    color: #fff;
+  nav ul li a{
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
+    font-size:large;
   }
-
-  .search-menu {
-    display: flex;
-    margin-left: 20px;
-  }
+  nav ul li a:hover{
+   
+    transition: 0.5s;
+    color: rgb(122,168,79);
+}
 
   #slideshow-container {
     position: relative;
@@ -96,12 +103,13 @@ body {
     box-sizing: border-box;
 }
 footer{
-    background-color: rgb(17, 16, 16);
+    background-color:antiquewhite;
     
 }
 .footerContainer{
     width: 100%;
     padding: 70px 30px 20px ;
+   
 }
 .socialIcons{
     display: flex;
@@ -125,7 +133,7 @@ footer{
     transition: 0.5s;
 }
 .socialIcons a:hover i{
-    color: rgb(236, 75, 75);
+    color: rgb(122,168,79);
     transition: 0.5s;
 }
 .footerNav{
@@ -137,25 +145,28 @@ footer{
     list-style-type: none;
 }
 .footerNav ul li a{
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
     font-weight: bold;
     opacity: 0.7;
     transition: 0.5s;
+    padding: 20px;
+    text-align: center;
+
 
 }
 .footerNav ul li a:hover{
     opacity: 1;
-    color: rgb(236, 75, 75);
+    color: rgb(122,168,79);
 }
-.footerBottom{
-    background-color: #000;
+.para{
+    background-color:antiquewhite;
     padding: 20px;
     text-align: center;
 }
-.footerBottom p{
+.para p{
     color: white;
 }
 .designer{
