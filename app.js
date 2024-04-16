@@ -17,6 +17,9 @@ app.get('/news',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render("about");
 })
+app.get('/contact',(req,res)=>{
+    res.render("contact");
+})
 http.listen(3000, function(){
     console.log('Server is running');
 });
