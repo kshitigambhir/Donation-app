@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Contact Us Form  | CodingLab </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="map">
+            <!-- Replace the src attribute value with the embedded map link provided by your map provider -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1892.1662732960199!2d73.83561277939458!3d18.468590117210255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf8d94414f8f%3A0xc6091a80e79be235!2sSinhgad%20College%20of%20Engineering%2C%20Pune!5e0!3m2!1sen!2sin!4v1713281299392!5m2!1sen!2sin" 
+            width="250"
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            >
+            </iframe>
+        </div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 94238 07090</div>
+        </div>
+        <div class="email details">
+          <i class="fab fa-linkedin"></i>
+          <div class="topic">Linked In</div>
+          <div class="text-one">https://www.linkedin.com/company/nss-sinhgad-college-of-engineering/people/</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>Questions about donations or need assistance? Reach out to our dedicated support team for prompt assistance and guidance.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" id="mail" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button">
+          <input type="button" onclick="showAlert()" value="Submit">
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <script>
+    function showAlert() {
+      alert("!!!!Contacted Successfully!!!!");
+      document.getElementById("name").value = "";
+      document.getElementById("mail").value = "";
+    }
+  </script>
+</body>
+</html>
