@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes Donation</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        text-align: center;
+        background-color: rgb(230, 228, 213);;
+        padding: 20px 0;
+      }
+      
+      .cover-photo {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+      
+      form {
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #45a049;
+      }
+      
+      button:active {
+        background-color: #3e8e41;
+      }
+      
+  </style>
+
+</head>
+<body>
+  <header>
+    <!-- Your cover photo or logo here -->
+    <img src="img/shoes.jpeg" alt="Cover Photo" class="cover-photo">
+    <h1>Shoes Donation </h1>
+  </header>
+  <div class="container">
+    <form id="donationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+      
+      <label for="shoeSize">Shoe Size:</label>
+      <select id="shoeSize" name="shoeSize" required>
+        <option value="">Select Size</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <!-- Add more sizes as needed -->
+      </select>
+      
+      <button type="submit">Donate</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('donationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Retrieve form data
+        var formData = new FormData(this);
+        
+        // Do something with the form data (e.g., submit it to a server)
+        // For now, let's just log it to the console
+        for (var pair of formData.entries()) {
+          console.log(pair[0] + ': ' + pair[1]);
+        }
+        alert("Form Submitted Successfully - Article would be collected as Early as Possible")
+        // You can also reset the form after submission if needed
+        this.reset();
+      });
+      
+      
+  </script>
+</body>
+
+</html>

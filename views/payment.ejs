@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Donation</title>
+  <style>
+    /* Add or modify styles as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    background-color:rgb(230, 228, 213);;
+    padding: 20px 0;
+  }
+  
+  .cover-photo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Your cover photo or logo here -->
+    <img src="img/money.jpeg" alt="Cover Photo" class="cover-photo">
+    <h1>Money Donation </h1>
+  </header>
+  <div class="container">
+    <form id="donationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="amount">Amount (INR):</label>
+      <input type="number" id="amount" name="amount" min="1" required>
+      
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="creditCard">Credit Card</option>
+        <option value="ibank">Internet Banking</option>
+        <option value="upi">UPI</option>
+        <!-- Add more payment methods as needed -->
+      </select>
+      
+      <div id="upiQRCode" style="display: none;">
+        <!-- UPI QR Code will be displayed here -->
+        <img id="upiQR" src="img/qr.jpeg" alt="UPI QR Code" style="max-width: 100%;">
+      </div>
+      
+      <label for="paymentScreenshot">Payment Screenshot:</label>
+      <input type="file" id="paymentScreenshot" name="paymentScreenshot" accept="image/*" required>
+      
+      <button type="submit">Donate</button>
+    </form>
+  </div>
+  <script>
+    // Function to display UPI QR code when UPI payment method is selected
+function displayUPIQR() {
+    var upiQRCodeDiv = document.getElementById('upiQRCode');
+    var paymentMethodSelect = document.getElementById('paymentMethod');
+    var selectedMethod = paymentMethodSelect.value;
+    
+    if (selectedMethod === 'upi') {
+      upiQRCodeDiv.style.display = 'block';
+      // Replace the source of the QR code image with your actual QR code image
+      document.getElementById('upiQR').src = 'qr.jpeg';
+    } else {
+      upiQRCodeDiv.style.display = 'none';
+    }
+  }
+  
+  // Event listener for payment method selection change
+  document.getElementById('paymentMethod').addEventListener('change', displayUPIQR);
+  
+  // Event listener for form submission
+  document.getElementById('donationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    
+    // Retrieve form data
+    var formData = new FormData(this);
+    
+    // Do something with the form data (e.g., submit it to a server)
+    // For now, let's just log it to the console
+    for (var pair of formData.entries()) {
+      console.log(pair[0] + ': ' + pair[1]);
+    }
+    alert("Donation Submitted Successfully - Thank You")
+    // You can also reset the form after submission if needed
+    this.reset();
+  });
+  
+  </script>
+</body>
+</html>
