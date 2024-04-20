@@ -37,6 +37,9 @@ app.get('/payment',(req,res)=>{
 app.get('/shoes',(req,res)=>{
     res.render("shoes");
 })
+app.get('/success',(req,res)=>{
+    res.render("success");
+})
 http.listen(3000, function(){
     console.log('Server is running');
 });
