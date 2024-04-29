@@ -4,13 +4,13 @@
 This is a donation app designed to facilitate online donations to various causes.
 
 ## Reason for the project
-1. Social Impact: By facilitating donations, we're directly contributing to positive social change. Whether it's providing essentials like clothing, books, or footwear, or offering financial support, our platform can make a tangible difference in people's lives.
-2. Addressing Needs: Many individuals and communities face various challenges, from financial hardships to lack of access to basic necessities. our donation website serves as a bridge between those who want to help and those in need, addressing immediate needs and promoting long-term solutions.
-3. Community Building: It provides a platform for people to support communities in need, whether it’s through financial aid or by donating essential items like clothes, books, and footwear.
-4. Empowerment: Donating is not just about giving material goods or money; it's about empowering both donors and recipients. Donors feel a sense of fulfilment and purpose by making a positive impact, while recipients receive support that can improve their quality of life and outlook for the future.
-5. Education and Literacy: Donating books can support education and literacy programs, which are fundamental for personal and societal development.
-6. Resource Redistribution: It helps redistribute resources from those who have surplus to those who are in need, promoting a more balanced and equitable society.
-7. Crisis Response: In times of crisis, such as natural disasters or pandemics, the website can serve as a quick and organized way to gather and distribute aid.
+1. **Social Impact**: By facilitating donations, we're directly contributing to positive social change. Whether it's providing essentials like clothing, books, or footwear, or offering financial support, our platform can make a tangible difference in people's lives.
+2. **Addressing Needs**: Many individuals and communities face various challenges, from financial hardships to lack of access to basic necessities. our donation website serves as a bridge between those who want to help and those in need, addressing immediate needs and promoting long-term solutions.
+3. **Community Building**: It provides a platform for people to support communities in need, whether it’s through financial aid or by donating essential items like clothes, books, and footwear.
+4. **Empowerment**: Donating is not just about giving material goods or money; it's about empowering both donors and recipients. Donors feel a sense of fulfilment and purpose by making a positive impact, while recipients receive support that can improve their quality of life and outlook for the future.
+5. **Education and Literacy**: Donating books can support education and literacy programs, which are fundamental for personal and societal development.
+6. **Resource Redistribution**: It helps redistribute resources from those who have surplus to those who are in need, promoting a more balanced and equitable society.
+7. **Crisis Response**: In times of crisis, such as natural disasters or pandemics, the website can serve as a quick and organized way to gather and distribute aid.
 
 # Collaborators
 **Kshiti Gambhir**  &nbsp;  **Rudraksh Kushwaha** &nbsp;    **Samarth Shendre**  &nbsp;   **Rushikesh Gavhane**<br>
